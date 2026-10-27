@@ -1,0 +1,58 @@
+# Environment variables and secrets
+.env
+.env.*
+*.env
+*.local
+credentials.json
+secrets.*
+*.pem
+*.key
+*.pkcs12
+*.p12
+*.pfx
+*.jks
+*.keystore
+application-secret.*
+application-local.*
+
+# Maven build artifacts
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# IDEs and Editors
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+bin/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+
+# Python caches (for demo script)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/

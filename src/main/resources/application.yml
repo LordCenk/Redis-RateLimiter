@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    redis:
+      host: ${REDIS_HOST:127.0.0.1}
+      port: ${REDIS_PORT:6379}
+
+rate-limit:
+  algorithm: TOKEN_BUCKET
+  capacity: 5
+  refill-rate: 1
+  window-seconds: 10
+  max-requests: 5
+  identity-type: API_KEY
+  api-keys:
+    - key: test-api-key-1
+      username: user1
+    - key: test-api-key-2
+      username: user2
+    - key: test-api-key-3
+      username: user3
